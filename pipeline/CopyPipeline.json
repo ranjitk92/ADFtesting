@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyfromBlobtoBlob",
+				"name": "CopyfromBinary_for_DEVtoOutpuBlob",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -35,7 +35,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "InputDataset",
+						"referenceName": "Binary_for_DEV",
 						"type": "DatasetReference"
 					}
 				],
