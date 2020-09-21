@@ -107,7 +107,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "CopyInputtoOuptputBlob_1",
+						"name": "CopyInputtoOuptputBlob_2",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
