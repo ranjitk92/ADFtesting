@@ -1,13 +1,11 @@
 {
 	"name": "ADFtestingLinkedBlob",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"description": "Linked Blob Storage for ADF testing",
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=adftestblobrk;EndpointSuffix=core.windows.net;",
-			"accountKey": {
+			"connectionString": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "AzureKeyVault1",
@@ -16,5 +14,6 @@
 				"secretName": "AzureStorageAccountKey"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
