@@ -11,6 +11,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ADFtestingLinkedBlob'"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://SQLDBlogin.vault.azure.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "SQLDBlogin"
+		},
+		"SqlServer1_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "SQLDBstring"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +52,15 @@
 					},
 					"ADFtestingLinkedBlob_connectionString": {
 						"value": "[parameters('ADFtestingLinkedBlob_connectionString')]"
+					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_connectionString_secretName')]"
+					},
+					"SqlServer1_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_connectionString_secretName')]"
 					}
 				}
 			},
