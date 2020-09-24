@@ -7,17 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "alexdonjohnADF-DEV"
 		},
-		"ADFtestingLinkedBlob_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ADFtestingLinkedBlob'"
+		"ADFtestingLinkedBlob_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "AzureStorageAccountKey"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://SQLDBlogin.vault.azure.net/"
-		},
-		"AzureSqlDatabase1_properties_typeProperties_connectionString_secretName": {
-			"type": "string",
-			"defaultValue": "SQLDBlogin"
 		},
 		"SqlServer1_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
@@ -50,14 +46,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ADFtestingLinkedBlob_connectionString": {
-						"value": "[parameters('ADFtestingLinkedBlob_connectionString')]"
-					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
-					"AzureSqlDatabase1_properties_typeProperties_connectionString_secretName": {
-						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_connectionString_secretName')]"
+					"ADFtestingLinkedBlob_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('ADFtestingLinkedBlob_properties_typeProperties_connectionString_secretName')]"
 					},
 					"SqlServer1_properties_typeProperties_connectionString_secretName": {
 						"value": "[parameters('SqlServer1_properties_typeProperties_connectionString_secretName')]"
