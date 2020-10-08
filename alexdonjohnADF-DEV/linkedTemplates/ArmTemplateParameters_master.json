@@ -5,7 +5,7 @@
 		"factoryName": {
 			"value": "alexdonjohnADF-DEV"
 		},
-		"linkedService1_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
 		"containerUri": {
