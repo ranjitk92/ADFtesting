@@ -2,17 +2,14 @@
 	"name": "Input",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADFtestingLinkedBlob",
+			"referenceName": "linkedService1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"fileName": "emp.txt",
-				"folderPath": "input",
-				"container": "adftutorial"
+				"type": "AzureBlobStorageLocation"
 			}
 		}
 	}

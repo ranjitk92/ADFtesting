@@ -2,7 +2,7 @@
 	"name": "Output",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADFtestingLinkedBlob",
+			"referenceName": "linkedService1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
