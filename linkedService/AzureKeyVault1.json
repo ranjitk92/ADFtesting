@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://SQLDBlogin.vault.azure.net/"
+			"baseUrl": "https://clientresourcekeyvault.vault.azure.net/"
 		}
 	}
 }
