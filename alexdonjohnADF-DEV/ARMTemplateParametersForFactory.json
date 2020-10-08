@@ -5,14 +5,8 @@
 		"factoryName": {
 			"value": "alexdonjohnADF-DEV"
 		},
-		"ADFtestingLinkedBlob_properties_typeProperties_connectionString_secretName": {
-			"value": "AzureStorageAccountKey"
-		},
-		"AzureKeyVault1_properties_typeProperties_baseUrl": {
-			"value": "https://SQLDBlogin.vault.azure.net/"
-		},
-		"SqlServer1_properties_typeProperties_connectionString_secretName": {
-			"value": "SQLDBstring"
+		"linkedService1_connectionString": {
+			"value": ""
 		}
 	}
 }
